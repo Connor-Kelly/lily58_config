@@ -24,8 +24,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <400>;
-            quick-tap-ms = <200>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <100>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <1>;    // <---[[the W key]]
         };
@@ -48,7 +48,8 @@
 &mo 3  &hm LGUI A &hm LALT S &hm LSFT D &hm LCTL F &kp G &kp H &pht RCTRL J &pht RSFT K &hm RALT L &hm LGUI SEMI &kp SQT
 // &kp LCTRL &kp A  &kp S  &kp D    &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L   &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-                        &kp LALT &kp LGUI &kp SPACE &mo 1  &mo 2   &kp RET  &kp BSPC &kp RGUI
+                        // &kp LALT &kp LGUI &kp SPACE &mo 1  &mo 2   &kp RET  &kp BSPC &kp RGUI
+                        &kp LALT &kp RET &kp TAB &mo 1  &mo 2   &kp BSPC  &kp SPACE &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
