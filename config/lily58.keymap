@@ -44,7 +44,7 @@
 &mo 3  &hm LGUI A &hm LALT S &hm LSFT D &hm LCTL F &kp G &kp H &hm RCTRL J &hm RSFT K &hm RALT L &hm LGUI SEMI &kp SQT
 &kp GRAVE &kp Z  &kp X  &kp C    &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT &kp FSLH &kp RSHFT
                         // &kp LALT &kp LGUI &kp SPACE &mo 1  &mo 2   &kp RET  &kp BSPC &kp RGUI
-                        &kp LALT &mo 1 &kp RET &lt 1 TAB    &lt 2 BSPC  &kp SPACE &mo 2 &kp RGUI
+                        &kp LALT &mo 1 &lt 1 RET &kp TAB    &kp BSPC  &lt 2 SPACE &mo 2 &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
