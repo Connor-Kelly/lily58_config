@@ -64,9 +64,9 @@
 //                     |      |      |      |        |  |       |      |       |       |
             display-name = "Symbol";
             bindings = <
-&kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans    &trans    &trans   &trans    &trans     &trans      &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH   &trans
-&trans    &trans    &trans   &trans    &kp LPAR  &kp RPAR     &kp PLUS    &kp N3  &kp N5  &kp N6  &kp STAR   &trans
+&kp ESC &kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  
+&trans    &trans    &trans   &trans    &trans     &trans      &kp MINUS    &kp N7  &kp N8  &kp N9  &kp FSLH   &kp F12
+&trans    &trans    &trans   &trans    &kp LPAR  &kp RPAR     &kp PLUS    &kp N4  &kp N5  &kp N6  &kp STAR   &trans
 &trans    &trans    &kp LBKT  &kp RBKT &kp LBRC  &kp RBRC  &trans &trans   &kp DOT    &kp N1  &kp N2  &kp N3  &kp EQUAL   &trans
                         &trans  &trans  &trans    &trans      &trans     &kp N0     &trans    &trans
             >;
@@ -75,21 +75,14 @@
         };
 
         movement_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
-// |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
-//                     |      |      |      |        |  |       |      |       |       |
             display-name = "Move";
             bindings = <
 &bt BT_CLR &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4  &trans      &trans    &trans    &trans   &trans    &trans
-&trans &trans &trans &trans  &trans  &trans                       &trans      &kp HOME  &kp UP    &kp END   &trans    &trans
-&trans &trans &trans &trans  &trans  &trans                       &kp PLUS &kp LEFT  &kp DOWN  &kp RIGHT &trans &trans
-&trans &trans &trans &trans  &trans  &trans    &trans   &trans    &trans &trans &trans  &trans  &trans    &trans
+&trans &trans &msc SCRL_UP &mmv MOVE_UP  &msc SCRL_DOWN  &trans                       &trans      &kp HOME  &kp UP    &kp END   &trans    &trans
+&trans &trans &mmv MOVE_LEFT &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                       &kp PLUS &kp LEFT  &kp DOWN  &kp RIGHT &trans &trans
+&trans &trans &trans &trans  &trans  &trans    &trans   &trans    &trans &mkp LCLK &mkp RCLK  &mkp RCLK  &trans    &trans
                         &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
             >;
-
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
