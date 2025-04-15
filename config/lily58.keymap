@@ -86,7 +86,7 @@
 &trans &trans &trans &trans &trans  &trans                &trans            &kp HOME  &kp UP    &kp END   &trans &trans
 &trans &trans &trans &trans &trans &trans                 &kp LC(LG(RIGHT)) &kp LEFT  &kp DOWN  &kp RIGHT &trans &trans
 &trans &trans &trans &trans &trans  &trans &trans &trans  &kp LC(LG(LEFT))  &kp LA(LEFT) &kp LA(RIGHT) &trans     &trans &trans
-                        &trans  &trans  &trans    &trans   &trans    &trans      &trans    &trans
+                        &trans  &trans  &trans    &trans   &kp DEL    &trans      &trans    &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
